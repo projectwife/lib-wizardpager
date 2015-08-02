@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/WizardPageContainer"
     android:orientation="vertical"
-    tools:ignore="UseCompoundDrawables" >
+    tools:ignore="UseCompoundDrawables">
 
     <TextView style="@style/WizardPageTitle" />
 
     <FrameLayout
         android:id="@+id/frameLayoutImageContainer"
-        style="@style/WizardPageImageContainer" >
+        style="@style/WizardPageImageContainer">
 
         <ImageView
             android:id="@+id/imageView"

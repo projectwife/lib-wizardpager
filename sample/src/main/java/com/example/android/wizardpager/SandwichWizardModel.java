@@ -21,6 +21,7 @@ import android.content.Context;
 import com.example.android.wizardpager.pages.CustomerInfoPage;
 import com.tech.freak.wizardpager.model.AbstractWizardModel;
 import com.tech.freak.wizardpager.model.BranchPage;
+import com.tech.freak.wizardpager.model.ImagePage;
 import com.tech.freak.wizardpager.model.MultipleFixedChoicePage;
 import com.tech.freak.wizardpager.model.NumberPage;
 import com.tech.freak.wizardpager.model.PageList;
@@ -36,6 +37,9 @@ public class SandwichWizardModel extends AbstractWizardModel {
     protected PageList onNewRootPageList() {
         return new PageList(new BranchPage(this, "Order type").addBranch(
                 "Sandwich",
+
+                new ImagePage(this, "Photo").setRequired(true),
+
                 new SingleFixedChoicePage(this, "Bread").setChoices("White",
                         "Wheat", "Rye", "Pretzel", "Ciabatta")
                         .setRequired(true),

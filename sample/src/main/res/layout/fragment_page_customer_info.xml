@@ -20,34 +20,40 @@
 
     <TextView style="@style/WizardPageTitle" />
 
-    <ScrollView android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <LinearLayout android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView style="@style/WizardFormLabel"
+            <TextView
+                style="@style/WizardFormLabel"
                 android:text="@string/label_your_name" />
 
-            <EditText android:id="@+id/your_name"
+            <EditText
+                android:id="@+id/your_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:saveEnabled="false"
-                android:inputType="textCapWords"
+                android:layout_marginBottom="16dp"
                 android:hint="@string/hint_your_name"
-                android:layout_marginBottom="16dp" />
+                android:inputType="textCapWords"
+                android:saveEnabled="false" />
 
-            <TextView style="@style/WizardFormLabel"
+            <TextView
+                style="@style/WizardFormLabel"
                 android:text="@string/label_your_email" />
 
-            <EditText android:id="@+id/your_email"
+            <EditText
+                android:id="@+id/your_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:saveEnabled="false"
+                android:hint="@string/hint_your_email"
                 android:inputType="textEmailAddress"
-                android:hint="@string/hint_your_email" />
+                android:saveEnabled="false" />
 
         </LinearLayout>
     </ScrollView>
